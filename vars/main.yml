@@ -1,0 +1,26 @@
+---
+# <Name of variable>: >what it equals>
+
+# Set admin_user to admin. This will be the username of the user created through Ansible.
+admin_user: admin
+
+# sudo can change from one distro to another. This group handles sudo access.
+# In some distros it could be the wheel group, for example (Fedora or enterprise Linux).
+admin_group: sudo
+
+# For Ansible pull repo, set it to the URL of this very repo right here.
+ansible_pull_repo: "https://https://github.com/RyanJiwooKim/ansible-pull-project.git"
+
+# Starting and enabling a service. We need to know the name of the service to have started.
+# SSH server here.
+managed_service: ssh
+
+# We have the name of packages. Each one begins on a new line with a hyphen.
+# We have curl, tmux, vim, and wget.
+packages:
+  - curl
+  - tmux
+  - vim
+  - wget
+
+system_timezone: Etc/UTC
