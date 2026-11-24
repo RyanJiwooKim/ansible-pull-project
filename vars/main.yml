@@ -1,5 +1,5 @@
 ---
-# <Name of variable>: >what it equals>
+# <Name of variable>: <what it equals>
 
 # Set admin_user to admin. This will be the username of the user created through Ansible.
 admin_user: admin
@@ -9,7 +9,7 @@ admin_user: admin
 admin_group: sudo
 
 # For Ansible pull repo, set it to the URL of this very repo right here.
-ansible_pull_repo: "https://https://github.com/RyanJiwooKim/ansible-pull-project.git"
+ansible_pull_repo: "https://github.com/RyanJiwooKim/ansible-pull-project.git"
 
 # Starting and enabling a service. We need to know the name of the service to have started.
 # SSH server here.
